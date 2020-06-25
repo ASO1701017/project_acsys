@@ -1,0 +1,143 @@
+/*ボタン、テキスト、divの設定*/
+button,input,div{
+    /*フォント設定*/
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #5c905c;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+button,div{
+    margin: 10px 30px;
+}
+
+label{
+    margin-top: 12px;
+    font-size: 17px;
+    float: left;
+}
+
+/*背景を白に*/
+#signin-backstyle{
+    margin-top: 60px;
+    background: white;
+    display: inline-block;
+}
+
+/*acsysにログインのスタイル*/
+#signin-title{
+    margin-top: 35px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/*inputのスタイル*/
+input {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+/*inputフォーカス時*/
+input:focus{
+    border: 2px solid #5c905c;
+    z-index: 10;
+    outline: 0;
+}
+
+.input-form-text{
+    width: 25em;
+    float: left;
+}
+
+#BirthDayTitle{
+    margin-top: 32px;
+    font-size: 17px;
+    float: left;
+}
+
+#Year{
+    Width:4em;
+    margin-top: 14px;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+#Month,#Day{
+    width: 2em;
+    margin-top: 14px;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+#GenderInput{
+    margin-top: 146px;
+}
+
+#GenderTitle{
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+#Active{
+    margin-top: 100px;
+}
+
+.signin-information-title{
+    border-bottom: 2px solid #5c905c;
+    text-align: left;
+    color: #5c905c;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+select{
+    margin-top: 12px;
+    width: 50%;
+    height: 1.5em;
+    font-size: 18px;
+}
+
+#ActiveLevel{
+    margin-top: 110px;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+td {
+    border: solid 1px;
+    padding: 0.5em;
+}
+
+/*buttonの設定*/
+button {
+    width: 25em;
+    font-size: 20px;
+    margin-top: 30px;
+    padding:5px;
+    line-height: normal;
+    display:inline-block;
+}
+
+.btn-flat-vertical-border {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-left: solid 4px #FF839007;
+    border-right: solid 4px #FF839007;
+    color: #ffffff;
+    background: #5c905c;
+    transition: .4s;
+}
+
+.btn-flat-vertical-border:hover {
+    background: #283d28;
+    color: #FFF;
+}

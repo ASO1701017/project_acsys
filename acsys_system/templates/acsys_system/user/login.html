@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン</title>
+</head>
+<body>
+<section>
+    <div id="login-backstyle">
+        <div id="login-title">
+            acsys にログイン
+        </div>
+        <div id="error-login" v-if="!ErrorMessage">
+            メールアドレスかパスワードが間違っています
+        </div>
+        <div>
+            <label for="Mail"><input type="email" id="Mail" placeholder="メールアドレス" v-model="MailAddress"></label>
+        </div>
+        <div>
+            <label for="Pass"><input type="Password" id="Pass" placeholder="パスワード" v-model="Password" ></label>
+        </div>
+        <button @click="login"  class="btn-flat-vertical-border">ログイン</button>
+        <UserLogin />
+        <div id="login-new-account" >
+            <router-link to="/signin" class="cp_link">アカウントの新規作成</router-link>
+        </div>
+    </div>
+</section>
+</body>
+</html>

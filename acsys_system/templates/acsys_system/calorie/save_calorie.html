@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>カロリー貯金</title>
+</head>
+<body>
+<div id="calorie_intake">
+    <p>摂取カロリー</p>
+    <form method="post">
+        <select name="food_select" id="food_select">
+{#            {% for food in foods %}#}
+{#                <option>{{ food.name }}</option>#}
+{#            {% endfor %}#}
+        </select>
+        <input type="text" id="selected_food">
+    </form>
+{#  <select v-model="selectedfood">#}
+{#      <option disabled value="">食べたものを選択してください</option>#}
+{#      <option v-for="food in foods"  v-bind:value="food.kcal" :key="food.key">#}
+{#          {{food.name}}#}
+{#      </option>#}
+{#  </select>#}
+{#  <input type="text" v-model="selectedfood" value="selectedfood">kcal#}
+</div>
+<div id="calorie_burned">
+    <p>消費カロリー</p>
+    <form method="post">
+        <select name="motion_select" id="motion_select">
+{#            {% for motion in motions %}#}
+{#                <option>{{ motion.name }}</option>#}
+{#            {% endfor %}#}
+        </select>
+        <input type="text" id="selected_motion">
+    </form>
+{#    <select v-model="selectedmotion">#}
+{#        <option disabled value="">行った運動を選択してください</option>#}
+{#        <option v-for="motion in motions" v-bind:value="motion.kcal" :key="motion.key">#}
+{#            {{motion.name}}#}
+{#        </option>#}
+{#    </select>#}
+{#    <input type="text" v-model="selectedmotion" value="selectedmotion">kcal#}
+</div>
+<div id="calorie_message">
+    <p>今までの合計カロリーの差分は</p>
+{#  <p style="font-size: 24pt">{{selectedfood - selectedmotion}}だよ！</p>#}
+</div>
+</body>
+</html>

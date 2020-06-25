@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}acsys{% endblock %}</title>
+{#    <link rel="stylesheet" type="text/css" href="../static/acsys_system/css/web_system.css">#}
+    <link rel="stylesheet" type="text/css" href="{% static 'acsys_system/css/web_system.css'%}">
+</head>
+<body>
+<div id="HeaderBackGroundColor">
+        <input type="button" name="StartLogin">
+        <input type="button" name="StartSignIn">
+</div>
+</body>
+</html>
