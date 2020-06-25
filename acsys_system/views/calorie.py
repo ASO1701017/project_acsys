@@ -3,7 +3,7 @@ from django.http import HttpResponse
 # from .models import Food
 # from .models import Motion
 
-def calorie(request):
+def save_calorie(request):
     # 各モデルから全ての要素を呼び出す
     # foods = Food.object.all()
     # motions = Motion.object.all()
