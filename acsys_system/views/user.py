@@ -12,5 +12,5 @@ def login(request):
         return render(request, 'acsys_system/user/login.html')
 
 
-def signin(request):
-    return render(request, 'acsys_system/user/signin.html')
+def signup(request):
+    return render(request, 'acsys_system/user/signup.html')

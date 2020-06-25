@@ -6,6 +6,6 @@ app_name = "acsys"
 urlpatterns = [
     path('user/', user.index, name='index'),
     path('user/login', user.login, name='login'),
-    path('user/signin', user.signin, name='signin'),
+    path('user/signup', user.signup, name='signup'),
     # path('calorie/save_calorie', views.calorie, name='save_calorie'),
 ]
