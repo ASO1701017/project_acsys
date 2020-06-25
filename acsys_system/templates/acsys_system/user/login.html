@@ -1,4 +1,21 @@
 {% extends '../base.html' %}
+{% block title %}acsysにログイン{% endblock %}
 {% block content %}
-    <h1>ログイン画面へようこそ！</h1><br>
+        <div class="login">
+        {% if error %}
+            {#<div style="text-align: center">{{ error }}</div>#}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        <div class="login-triangle"></div>
+
+        <h2 class="login-header">ログイン</h2>
+
+        <form class="login-container" action="/user/login" method="post">
+            {% csrf_token %}
+
+            <p><input type="text" placeholder="ログインID" name="user_id"></p>
+            <p><input type="password" placeholder="パスワード" name="user_pass"></p>
+            <p><input type="submit" value="ログイン"></p>
+        </form>
+    </div>
 {% endblock %}

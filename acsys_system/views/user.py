@@ -6,7 +6,10 @@ def index(request):
 
 
 def login(request):
-    return render(request, 'acsys_system/user/login.html')
+
+    context = {}
+    if request.method == 'GET':
+        return render(request, 'acsys_system/user/login.html')
 
 
 def signin(request):
