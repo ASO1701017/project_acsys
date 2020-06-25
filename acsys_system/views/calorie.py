@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # from .models import Food
+# from .models import Motion
 
 def calorie(request):
     # 各モデルから全ての要素を呼び出す
