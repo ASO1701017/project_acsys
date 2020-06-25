@@ -11,7 +11,7 @@
     <form method="post">
         <select name="food_select" id="food_select">
 {#            {% for food in foods %}#}
-{#                <option>{{ food.name }}</option>#}
+{#                <option>{{ food.food_name }　：　{{ food.food_calorie }}</option>#}
 {#            {% endfor %}#}
         </select>
         <input type="text" id="selected_food">
@@ -29,7 +29,7 @@
     <form method="post">
         <select name="motion_select" id="motion_select">
 {#            {% for motion in motions %}#}
-{#                <option>{{ motion.name }}</option>#}
+{#                <option>{{ motion.motion_name }}　：　{{ motion.motion_calorie }}</option>#}
 {#            {% endfor %}#}
         </select>
         <input type="text" id="selected_motion">
