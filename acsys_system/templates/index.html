@@ -1,16 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}acsys{% endblock %}</title>
-{#    <link rel="stylesheet" type="text/css" href="../static/acsys_system/css/web_system.css">#}
-    <link rel="stylesheet" type="text/css" href="{% static 'acsys_system/css/web_system.css'%}">
-</head>
-<body>
-<div id="HeaderBackGroundColor">
-        <input type="button" name="StartLogin">
-        <input type="button" name="StartSignIn">
-</div>
-</body>
-</html>
+{% extends './acsys_system/base.html' %}
+{% block content %}
+    <h1>acsysへようこそ！</h1><br>
+    acsysとは食べ物のカロリーと運動したカロリーを入力した差分を貯金するアプリです！
+{% endblock %}
